@@ -100,8 +100,8 @@ int main(void)
         y = map(y1, -100, 100, -255, 255);
 
         printf("x1: %d %d, y1: %d %d, x2: %d, y2: %d\n", x1, x, y1, y, x2, y2);
-        motor_set(MOTOR_DRIVER_DEV(0), MOTOR_0_ID, y + x);
-        motor_set(MOTOR_DRIVER_DEV(0), MOTOR_1_ID, y - x);
+        motor_set(MOTOR_DRIVER_DEV(0), MOTOR_0_ID, y - x);
+        motor_set(MOTOR_DRIVER_DEV(0), MOTOR_1_ID, y + x);
     }
 
     return 0;
